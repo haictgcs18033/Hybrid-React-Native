@@ -101,13 +101,13 @@ export default function rentalDetail({route, navigation}) {
       .required('Please fill your name'),
   });
   let handleUpdateRental = value => {
-    let isItem = allRental.find(
-      item => item.propertyName === value.propertyName,
-    );
-    if (isItem) {
-      alert('Property Name is existed');
-      return false;
-    }
+    // let isItem = allRental.find(
+    //   item => item.propertyName === value.propertyName,
+    // );
+    // if (isItem) {
+    //   alert('Property Name is existed');
+    //   return false;
+    // }
     dispatch(updateRental(value, navigation));
     setShowDialog(false);
   };
